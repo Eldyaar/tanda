@@ -13,10 +13,10 @@ export type CustomError = {
 }
 
 export interface ProductDataResponse {
-   data: Data
+   data: IData
 }
 
-export interface Data {
+export interface IData {
    barcode: Barcode
 }
 
