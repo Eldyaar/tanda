@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.Container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 344px) {
+  .Container {
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Container {
+    padding: 0 70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .Container {
+    padding: 0;
+    max-width: 1200px;
+  }
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-prev{
+  color: #000;
+  width: 30px;
+  height: 30px;
+}
