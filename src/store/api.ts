@@ -1,6 +1,6 @@
 import { createApi } from '@reduxjs/toolkit/query/react'
 import { GraphQLClient } from 'graphql-request'
-import { BaseQueryArgs, BaseQueryResult, CustomError, ProductDataResponse, IData, queryBarcode } from '../models/models'
+import { BaseQueryArgs, BaseQueryResult, CustomError, IData, queryBarcode } from '../models/models'
 
 const graphqlClient = new GraphQLClient('https://api.tanda.kg/graphql/')
 
