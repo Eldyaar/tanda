@@ -1,4 +1,3 @@
-import { StringGradients } from "antd/es/progress/progress"
 
 export type BaseQueryArgs = {
    body: string
@@ -108,7 +107,7 @@ export interface IReview {
    name: string
    review_text: string
    date: string
-} 
+}
 
 export interface IProduct {
    id: number

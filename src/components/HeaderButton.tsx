@@ -18,7 +18,7 @@ const HeaderButton: React.FC<HeaderButtonProps> = ({ label, icon, link }) => {
 
    return (
       <div style={headerButtonStyle}>
-         <div><img src={icon} alt={label} /></div>
+         <div><img src={icon} alt={link} /></div>
          <Typography.Text style={{ fontSize: 16, fontWeight: 400 }}>{label}</Typography.Text>
       </div>
 

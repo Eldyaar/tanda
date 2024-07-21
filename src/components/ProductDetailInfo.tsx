@@ -39,12 +39,12 @@ const ProductDetailInfo: React.FC = () => {
 
             <div className="flex flex-col w-[367px] h-full justify-between">
                <Space>
-                  <Typography.Title level={3} style={{ fontWeight: 700, fontSize: 24, textAlign: 'left' }}>{data.barcode.category.name}</Typography.Title></Space>
+                  <Typography.Title level={3} style={{ fontWeight: 700, fontSize: 24, textAlign: 'left' }}>{data?.barcode?.category.name}</Typography.Title></Space>
                <Space>
                   <div className="w-[24px] h-[24px] rounded-full bg-[#DEDEDE] flex items-center justify-center">
                      <UserOutlined className="text-gray-600" />
                   </div>
-                  <Typography.Text className="font-medium">{data.barcode.title}</Typography.Text>
+                  <Typography.Text className="font-medium">{data?.barcode?.title}</Typography.Text>
                </Space>
                <Space style={{ marginBottom: 10 }}><Typography.Text className="text-[#757575] font-medium">Бренд</Typography.Text></Space>
                <Space>
@@ -54,7 +54,7 @@ const ProductDetailInfo: React.FC = () => {
                <Space style={{ marginTop: 15 }}>
                   <Typography.Title level={3} style={{ fontSize: 18 }}>Описание</Typography.Title>
                </Space>
-               <Typography.Text style={{ textAlign: 'left' }}>{data.barcode.description}</Typography.Text>
+               <Typography.Text style={{ textAlign: 'left' }}>{data?.barcode?.description}</Typography.Text>
                <Space style={{ marginTop: 50 }}>
                   <Typography.Text onClick={() => setModal(true)} underline className="font-medium cursor-pointer">Смотреть характеристики</Typography.Text>
                </Space>
